@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+
+
+
+:root{
+    --cor1: #fed180;
+    --cor2: #ffc745;
+    --cor3: #007a78;
+    --cor4: #005c5b;
+    --cor5: #003b3a;
+    --cor6: #001615;
+   
+    --font-padrão: arial,verdana,helvetica,sans-serif;
+    --font-especial:"Whisper", cursive;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(to right, var(--cor4), var(--cor5));
+}
+header{
+    background-image: linear-gradient( to bottom, var(--cor3), var(--cor2));
+    min-height: 150px;
+    padding-top: 40px;
+    text-align: center;
+    
+}
+header > h1{
+    font-family: var(--font-especial);
+    
+}
+header > img{
+    width: 400px;
+    
+}
+nav{
+    background-color: var(--cor2);
+    padding: 10px;
+   
+    
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor3);
+    padding: 10px;
+    
+   
+     
+
+    
+}
+
+ a::after{
+    content: '[link]';
+    color: white;
+}
+
+nav a:hover{
+    background-color: var(--cor3);
+    color: black;
+    padding: 0px;
+    border-radius: 5px;
+    transition-duration: .5s;
+    padding: 5px;
+}
+main{
+    max-width: 600px;
+    min-width: 300px;
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+
+}
+main img{
+   max-width: 100%;
+   min-width: 100%;
+    
+}
+main p{
+    padding: 20px;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+main ul{
+    line-height: 1.5em;
+}
+footer{
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    padding: 30px;
+}
+
+
